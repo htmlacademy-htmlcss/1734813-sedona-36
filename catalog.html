@@ -9,6 +9,9 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -100,11 +103,6 @@
           <button class="button" type="submit">Применить</button>
           <button class="button" type="reset">Сбросить</button>
         </form>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
         <a href="#" class="button button-black">
           <span class="visually-hidden">Показать карточки</span>
         </a>
@@ -114,47 +112,92 @@
         <a class="button" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
-        <div class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <b class="hotel-card-price">Гостиница</b>
-          <b class="hotel-card-price">От 4000 ₽</b>
-          <a class="hotel-card-button button" href="#">подробнее</a>
-          <a class="hotel-card-button button" href="#">в избранное</a>
-          <img class="stars" src="#" alt="">
-          <b class="hotel-card-price">Рейтинг: 8,5</b>
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <b class="hotel-card-price">Гостиница</b>
-          <b class="hotel-card-price">От 5000 ₽</b>
-          <a class="hotel-card-button button" href="#">подробнее</a>
-          <a class="hotel-card-button button" href="#">в избранном</a>
-          <img class="stars" src="#" alt="">
-          <b class="hotel-card-price">Рейтинг: 9,2</b>
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">Desert Quail Inn</h3>
-          </a>
-          <b class="hotel-card-price">Гостиница</b>
-          <b class="hotel-card-price">От 2500 ₽</b>
-          <a class="hotel-card-button button" href="#">подробнее</a>
-          <a class="hotel-card-button button" href="#">в избранное</a>
-          <img class="stars" src="#" alt="">
-          <b class="hotel-card-price">Рейтинг: 6,9</b>
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="#" alt="">
-            <h3 class="hotel-card-title">GreenTree Inn</h3>
-          </a>
-          <b class="hotel-card-price">Гостиница</b>
-          <b class="hotel-card-price">От 1500 ₽</b>
-          <a class="hotel-card-button button" href="#">подробнее</a>
-          <a class="hotel-card-button button" href="#">в избранное</a>
-          <img class="stars" src="#" alt="">
-          <b class="hotel-card-price">Рейтинг: 5,0</b>
+        <div class="hotels-info">
+          <ul class="">
+            <li class="housing-card">
+              <a class="housing-card-link" href="housing.html">
+                <img class="housing-card-image" src="images/hotel-1.jpg" alt="Отель 1">
+              </a>
+              <a class="housing-card-title-link" href="">
+                <h3 class="housing-card-title">Amara Resort & Spa</h3>
+              </a>
+              <div class="housing-content">
+                <b class="housing-card-info">Гостиница</b>
+                <b class="housing-card-price">От 4000 ₽</b>
+              </div>
+              <div class="housing-content-second">
+                <a class="housing-card-button-info" href="#">Подробнее</a>
+                <a class="housing-card-button-love" href="#">В избранное</a>
+              </div>
+              <div class="housing-content-three">
+                <div class="rating-stars">
+                </div>
+                <span class="rating">Рейтинг: 8,5</span>
+              </div>
+            </li>
+            <li class="housing-card">
+              <a class="housing-card-link" href="housing.html">
+                <img class="housing-card-image" src="images/hotel-2.jpg" alt="Отель 2">
+              </a>
+              <a class="housing-card-title-link" href="">
+                <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+              </a>
+              <div class="housing-content">
+                <b class="housing-card-info">Гостиница</b>
+                <b class="housing-card-price">От 5000 ₽</b>
+              </div>
+              <div class="housing-content-second">
+                <a class="housing-card-button-info" href="#">Подробнее</a>
+                <a class="housing-card-button-love-green" href="#">В избранном</a>
+              </div>
+              <div class="housing-content-three">
+                <div class="rating-stars">
+                </div>
+                <span class="rating">Рейтинг: 9,2</span>
+              </div>
+            </li>
+            <li class="housing-card">
+              <a class="housing-card-link" href="housing.html">
+                <img class="housing-card-image" src="images/hotel-3.jpg" alt="Отель 3">
+              </a>
+              <a class="housing-card-title-link" href="">
+                <h3 class="housing-card-title">Desert Quail Inn</h3>
+              </a>
+              <div class="housing-content">
+                <b class="housing-card-info">Гостиница</b>
+                <b class="housing-card-price">От 2500 ₽</b>
+              </div>
+              <div class="housing-content-second">
+                <a class="housing-card-button-info" href="#">Подробнее</a>
+                <a class="housing-card-button-love" href="#">В избранное</a>
+              </div>
+              <div class="housing-content-three">
+                <div class="rating-stars">
+                </div>
+                <span class="rating">Рейтинг: 6,9</span>
+            </li>
+            <li class="housing-card">
+              <a class="housing-card-link" href="housing.html">
+                <img class="housing-card-image" src="images/hotel-4.jpg" alt="Отель 4">
+              </a>
+              <a class="housing-card-title-link" href="">
+                <h3 class="housing-card-title">GreenTree Inn</h3>
+              </a>
+              <div class="housing-content">
+                <p class="housing-card-info">Гостиница</p>
+                <p class="housing-card-price">От 1500 ₽</p>
+              </div>
+              <div class="housing-content-second">
+                <a class="housing-card-button-info" href="#">Подробнее</a>
+                <a class="housing-card-button-love" href="#">В избранное</a>
+              </div>
+              <div class="housing-content-three">
+                <div class="rating-stars">
+                </div>
+                <span class="rating">Рейтинг: 5,0</span>
+              </div>
+            </li>
+          </ul>
         </div>
         <div>
           <ul class="pagination">
@@ -181,7 +224,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="newsletter-black">
+      <section class="newsletter-white">
         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/">
@@ -207,8 +250,11 @@
             <li class="phone-number">
               <p class="visually-hidden">+7 (812) 812-12-12</p>
             </li>
-            <li class="html-logo" src="#">
+            <li class="html-logo">
               <p class="visually-hidden">html academy</p>
+              <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+                <img class="footer-icons" src="images/htmlacademy.svg" alt="htmlacademy">
+              </a>
             </li>
           </ul>
         </section>

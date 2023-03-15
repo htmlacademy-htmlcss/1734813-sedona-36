@@ -14,8 +14,8 @@
           <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны"></a>
         <nav class="navigation">
           <ul class="navigation-list">
-            <li class="navigation-item navigation-item-selected">
-              <a class="navigation-link" href="index.html">Главная</a>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-item-selected" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about.html">О Седоне</a>
@@ -112,27 +112,27 @@
                   <label class="radio-label" for="apartments">Апартаменты</label>
                 </li>
               </ul>
-              <fieldset class="catalog-filter-range">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <div class="range-price">
-                  <input type="number" class="range-input-min" id="price-min" name="price-min" value="0">
-                  <label for="price-min" class="price-label price-label-min">от</label>
-                  <input type="number" class="range-input-max" id="price-max" name="price-max" value="9000">
-                  <label for="price-max" class="price-label price-label-max">до</label>
-                </div>
-                <div class="range-container">
-                  <div class="range-scale">
-                    <div class="range">
-                      <button class="range-handle range-handle-min">
-                        <span class="visually-hidden">Установить минимальный порог цены</span>
-                      </button>
-                      <button class="range-handle range-handle-max">
-                        <span class="visually-hidden">Установить максимальный порог цены</span>
-                      </button>
-                    </div>
+            </fieldset>
+            <fieldset class="catalog-filter-range">
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              <div class="range-price">
+                <input type="number" class="range-input-min" id="price-min" name="price-min" value="0">
+                <label for="price-min" class="price-label price-label-min">от</label>
+                <input type="number" class="range-input-max" id="price-max" name="price-max" value="9000">
+                <label for="price-max" class="price-label price-label-max">до</label>
+              </div>
+              <div class="range-container">
+                <div class="range-scale">
+                  <div class="range">
+                    <button class="range-handle range-handle-min">
+                      <span class="visually-hidden">Установить минимальный порог цены</span>
+                    </button>
+                    <button class="range-handle range-handle-max">
+                      <span class="visually-hidden">Установить максимальный порог цены</span>
+                    </button>
                   </div>
                 </div>
-              </fieldset>
+              </div>
             </fieldset>
             <div class="catalog-filter-button">
               <button class="button-filter-submit" type="submit">ПРИМЕНИТЬ</button>
@@ -171,7 +171,7 @@
           <ul class="property-list">
             <li class="housing-card">
               <a class="housing-card-link" href="#">
-                <img class="housing-card-image" src="images/hotel-1.jpg" alt="Отель 1">
+                <img class="housing-card-image" src="images/hotel-1.jpg" alt="Отель 1.">
               </a>
               <a class="housing-card-title-link" href="housing.html">
                 <h3 class="housing-card-title">Amara Resort & Spa</h3>

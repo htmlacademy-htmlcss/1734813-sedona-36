@@ -95,28 +95,25 @@ body {
   font-weight: 700;
   color: #000000;
   list-style-type: none;
-  padding: 20px 16px;
+  padding: 22px 16px;
   text-decoration: none;
 }
 
 .navigation-icon {
   position: absolute;
-  top: 0;
+  top: -7px;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: -18px;
   margin: auto;
   color: #000000;
   padding: 23px 12px 16px;
 }
 
 .navigation-user {
-  /* margin-left: auto; */
   flex-wrap: wrap;
   margin: 0;
   margin-right: 70px;
-  /* padding-top: 14px;
-  padding-bottom: 14px; */
   list-style: none;
   display: flex;
   width: 350px;
@@ -126,10 +123,15 @@ body {
   justify-content: flex-end;
 }
 
-.navigation-item-selected {
-  border-bottom: 2px #756257 solid;
+.navigation-item-selected::before {
+  content: "";
+  height: 1px;
+  width: 68px;
+  border-bottom: 2px solid #756257;
+  position: absolute;
+  bottom: 1px;
+  left: 254px;
 }
-
 
 .navigation-item-second {
   display: flex;
@@ -164,10 +166,20 @@ body {
   border-radius: 4px;
 }
 
+.button:hover,
+.button:focus {
+  background: #615048;
+  outline: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .likes-number {
   position: absolute;
-  top: -8px;
-  right: -19px;
+  top: -11px;
+  right: -1px;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
@@ -211,12 +223,22 @@ body {
   margin-top: 69px;
 }
 
+.welcome-sedona-second {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 66px;
+}
+
 .welcome-sedona-text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin-bottom: 69px;
+  margin-bottom: 89px;
 }
 
 .advantages-item-blue {
@@ -272,23 +294,25 @@ body {
   flex-wrap: wrap;
 }
 
-.advantages-title-blue {
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-}
-
 .advantages-title-blue::before {
   position: absolute;
-  bottom: -30px;
+  bottom: -32px;
   left: 50%;
   width: 60px;
   height: 2px;
   background: rgba(255, 255, 255, 0.3);
   content: "";
   transform: translateX(-50%);
+}
+
+.advantages-discription-first {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 64px;
+  padding-top: 2px;
 }
 
 .advantages-discription {
@@ -298,6 +322,7 @@ body {
   text-align: center;
   color: #333333;
   margin-bottom: 64px;
+  padding-top: -1px;
 }
 
 .advantages-description-first {
@@ -327,8 +352,10 @@ body {
   max-width: 175px;
   position: relative;
   margin: auto;
-  margin-bottom: 62px;
-  margin-top: 102px
+  margin-bottom: 64px;
+  margin-top: 101px;
+  margin-left: 111px;
+  text-transform: uppercase;
 }
 
 .advantages-title {
@@ -340,13 +367,13 @@ body {
   position: relative;
   margin: auto;
   margin-bottom: 62px;
-  margin-top: 112px;
+  margin-top: 114px;
   text-transform: uppercase;
 }
 
 .advantages-title::before {
   position: absolute;
-  bottom: -30px;
+  bottom: -31px;
   left: 50%;
   width: 60px;
   height: 2px;
@@ -403,14 +430,14 @@ body {
 
 .item-house::before {
   background: url("../images/house.svg") no-repeat 0 0;
-  top: 80px;
+  top: 75px;
   width: 75px;
   height: 72px;
 }
 
 .item-food::before {
   background: url("../images/food.svg") no-repeat 0 0;
-  top: 80px;
+  top: 75px;
   width: 75px;
   height: 72px;
 }
@@ -418,8 +445,9 @@ body {
 .item-present::before {
   width: 73px;
   height: 76px;
-  top: 78px;
+  top: 71px;
   background: url("../images/present.svg") no-repeat 0 0;
+  left: 203px;
 }
 
 li {
@@ -441,18 +469,20 @@ li {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 182px;
+  margin-top: 175px;
   position: relative;
 }
 
 .advantages-discription-second {
   text-align: center;
+  margin-bottom: 13px;
+  padding-top: 6px;
 }
 
 .interested {
   font-weight: 700;
   font-size: 30px;
-  line-height: 36Spx;
+  line-height: 36px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
@@ -462,6 +492,8 @@ li {
 .interested-text {
   text-align: center;
   margin-top: 20px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .interested-button {
@@ -559,6 +591,20 @@ li {
   align-items: center;
   width: 47px;
   height: 40px;
+  color: #83b3d3;
+}
+
+.footer-social-link:hover {
+  color: #68a2ca;
+}
+
+.footer-social-link:focus {
+  color: #68a2ca;
+  outline: none;
+}
+
+.footer-social-link:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .contacts-phone {
@@ -1047,6 +1093,28 @@ li {
   border-radius: 4px;
 }
 
+.button-hotel {
+  background: #82b3d3;
+  margin-bottom: 32px;
+}
+
+.button-hotel:hover,
+.button-hotel:focus {
+  background: #68a2ca;
+  outline: none;
+}
+
+.button-hotel:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82b3d3;
+}
+
+
+.button-hotel:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
 .button-filter-reset {
   box-sizing: border-box;
   width: 191px;
@@ -1064,6 +1132,22 @@ li {
   cursor: pointer;
   border: 3px solid transparent;
   border-radius: 4px;
+}
+
+.button-hotel-off {
+  background: transparent;
+}
+
+.button-hotel-off:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-hotel-off:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
+.button-hotel-off:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .sorting-container {
@@ -1283,6 +1367,29 @@ li {
   border-radius: 4px;
 }
 
+.housing-card-button-info:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  background: #756157;
+  display: inline;
+}
+
+.hotel-card-link:hover,
+.hotel-card-link:focus {
+  background: #615048;
+  outline: none;
+}
+
+.hotel-card-link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .housing-card-button-love {
   box-sizing: border-box;
   width: 140px;
@@ -1302,6 +1409,21 @@ li {
   border-radius: 4px;
 }
 
+.button-favorites:hover,
+.button-favorites:focus {
+  background: #68a2ca;
+  outline: none;
+}
+
+.button-favorites:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82b3d3;
+}
+
+.button-favorites {
+  background-color: #82b3d3;
+}
+
 .housing-card-button-love-green {
   box-sizing: border-box;
   width: 140px;
@@ -1319,6 +1441,20 @@ li {
   text-decoration: none;
   border: none;
   border-radius: 4px;
+}
+
+.button-like {
+  background-color: #7db54f;
+}
+
+.button-like:hover,
+.button-like:focus {
+  background: #6c9e42;
+  outline: none;
+}
+
+.button-like:active {
+  background: #7db54f;
 }
 
 
@@ -1388,6 +1524,17 @@ li {
   color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background: #68a2ca;
+  outline: none;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #82b3d3;
 }
 
 .newsletter-white-second {
@@ -1491,6 +1638,20 @@ li {
   text-align: center;
   border: none;
   border-radius: 0 4px 4px 0;
+}
+
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background: #68a2ca;
+}
+
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter-button:disabled {
+  background: #e5e5e5;
+  color: #ffffff;
 }
 
 .stars {

@@ -486,7 +486,7 @@ li {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 96px;
+  margin-top: 89px;
 }
 
 .interested-text {
@@ -496,8 +496,9 @@ li {
   line-height: 26px;
 }
 
-.interested-button {
-  text-align: center;
+.interested-but {
+  margin: 0;
+  padding: 0;
 }
 
 .button-search-sedona {
